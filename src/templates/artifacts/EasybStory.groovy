@@ -1,6 +1,4 @@
-@artifact.package@
-
-scenario "Hello Groovy", {
+@artifact.package@scenario "Hello Groovy", {
    given "A prefix string 'Hello '", {
       prefix = "Hello "
    }
@@ -14,6 +12,6 @@ scenario "Hello Groovy", {
    }
 
    then "The greeting should be equal to 'Hello Groovy'", {
-      greeting.shouldBe "Hello Groovy"
+      greeting.shouldBe "Failure"
    }
 }
